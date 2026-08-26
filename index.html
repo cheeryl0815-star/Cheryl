@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Webデザイナーのポートフォリオサイト" />
+  <title>PORTFOLIO.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top">PORTFOLIO.</a>
+    <button class="menu" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="#about">ABOUT ME</a><a href="#skills">SKILLS</a><a href="#works">WORKS</a><a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="hero-title">デザインで、想いをカタチに。</p>
+        <p class="hero-sub">伝わるデザインで、価値をつなぎます。</p>
+        <a class="btn btn-dark" href="#works">VIEW WORKS <span>→</span></a>
+      </div>
+      <div class="hero-visual" aria-label="デスクとノートパソコンのイメージ">
+        <div class="plant"></div><div class="cup"></div>
+        <div class="laptop"><div class="screen"><small>Creating<br>meaningful<br>connections.</small><i></i></div></div>
+      </div>
+      <a class="scroll" href="#about"><span>↧</span>SCROLL</a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner split">
+        <div class="copy reveal">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>はじめまして。<br>Webデザイナーの○○です。</h2>
+          <p>Webデザインを中心に、バナー制作やLP制作など、目的やターゲットに合わせたデザインを心がけています。ユーザーにとってわかりやすく、伝えたい想いがしっかり届くデザインを大切にしています。</p>
+          <a class="btn" href="#contact">MORE ABOUT ME <span>→</span></a>
+        </div>
+        <div class="arch-photo reveal" aria-hidden="true"><div class="vase"></div><div class="books"></div><div class="pencils"></div></div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-inner skills-layout">
+        <div class="skills-intro reveal"><p class="eyebrow">SKILLS</p><h2>できること</h2><p>Web制作で必要なスキルを中心に、企画・デザイン・コーディングまで一貫して対応できます。</p></div>
+        <div class="skill-grid">
+          <article class="skill-card reveal"><div class="skill-icon">▣</div><h3>DESIGN</h3><ul><li>Webデザイン</li><li>バナー制作</li><li>LPデザイン</li><li>UI/UXデザイン</li></ul></article>
+          <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>CODING</h3><ul><li>HTML / CSS</li><li>Sass(SCSS)</li><li>JavaScript</li><li>レスポンシブ対応</li></ul></article>
+          <article class="skill-card reveal"><div class="skill-icon">✎</div><h3>TOOL</h3><ul><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>XD</li></ul></article>
+          <article class="skill-card reveal"><div class="skill-icon">○</div><h3>OTHER</h3><ul><li>企画・構成</li><li>ワイヤーフレーム作成</li><li>画像編集・加工</li><li>クライアント対応</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works" id="works">
+      <div class="section-inner works-layout">
+        <div class="works-intro reveal"><p class="eyebrow">WORKS</p><h2>制作実績</h2><p>これまでに制作したWebサイトやバナー、LPなどの一部をご紹介します。デザインの雰囲気や得意なテイストをご覧ください。</p><a class="btn" href="#works-grid">VIEW ALL WORKS <span>→</span></a></div>
+        <div class="works-grid" id="works-grid">
+          <article class="work reveal"><div class="thumb thumb-1"><span>EC SITE</span></div><h3>オーガニック食品のECサイト</h3><p>Webサイト</p></article>
+          <article class="work reveal"><div class="thumb thumb-2"><span>INTERIOR</span></div><h3>インテリアブランドサイト</h3><p>Webサイト</p></article>
+          <article class="work reveal"><div class="thumb thumb-3"><span>SKIN CARE</span></div><h3>スキンケア商品のバナー</h3><p>バナー制作</p></article>
+          <article class="work reveal"><div class="thumb thumb-4"><span>CLINIC</span></div><h3>クリニックのサイトリニューアル</h3><p>Webサイト</p></article>
+          <article class="work reveal"><div class="thumb thumb-5"><span>SERVICE LP</span></div><h3>サービス紹介のLPデザイン</h3><p>LP制作</p></article>
+          <article class="work reveal"><div class="thumb thumb-6"><span>CAFE OPEN</span></div><h3>カフェのキャンペーンバナー</h3><p>バナー制作</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-inner contact-inner reveal"><div><p class="eyebrow">CONTACT</p><h2>お仕事のご依頼・ご相談はこちら</h2><p>Web制作のご依頼やご相談は、お気軽にお問い合わせください。</p></div><a class="btn contact-btn" href="mailto:hello@example.com">CONTACT ME <span>✉</span></a><div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="SNS">●</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#top">PORTFOLIO.</a><nav><a href="#about">ABOUT ME</a><a href="#skills">SKILLS</a><a href="#works">WORKS</a><a href="#contact">CONTACT</a></nav><small>© 2026 Portfolio. All Rights Reserved.</small></footer>
+  <script src="./script.js"></script>
+</body>
+</html>
