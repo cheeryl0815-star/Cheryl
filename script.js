@@ -1,3 +1,6 @@
-const menu=document.querySelector('.menu');const nav=document.querySelector('.nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
-const sections=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav a')];const spy=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${e.target.id}`))}}),{rootMargin:'-35% 0px -55%'});sections.forEach(s=>spy.observe(s));
+window.addEventListener("load",()=>{const loader=document.getElementById("loader");setTimeout(()=>loader.classList.add("is-hidden"),650)});
+const revealTargets=document.querySelectorAll(".section__head, .about__text, .about__visual, .skill-card, .work-card, .contact__inner");
+revealTargets.forEach(el=>el.classList.add("reveal"));
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}})},{threshold:.15});
+revealTargets.forEach(el=>observer.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener("click",e=>{const target=document.querySelector(link.getAttribute("href"));if(!target)return;e.preventDefault();target.scrollIntoView({behavior:"smooth",block:"start"})})});

@@ -1,82 +1,112 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Webデザイナーのポートフォリオサイト" />
-  <title>PORTFOLIO.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHERYL PORTFOLIO</title>
+  <meta name="description" content="Webデザインを中心に、制作実績・スキル・プロフィールをご紹介するポートフォリオサイトです。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <p class="loader__brand">CHERYL<br><span>PORTFOLIO</span></p>
+      <div class="loader__ring"></div>
+      <p class="loader__text">LOADING...</p>
+    </div>
+  </div>
+
   <header class="header">
-    <a class="logo" href="#top">PORTFOLIO.</a>
-    <button class="menu" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+    <a href="#top" class="brand" aria-label="ページ上部へ">
+      <span class="brand__main">CHERYL</span>
+      <span class="brand__sub">PORTFOLIO</span>
+    </a>
     <nav class="nav" aria-label="メインナビゲーション">
-      <a href="#about">ABOUT ME</a><a href="#skills">SKILLS</a><a href="#works">WORKS</a><a href="#contact">CONTACT</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#works">WORKS</a>
+      <a href="#contact">CONTACT</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="hero-title">デザインで、想いをカタチに。</p>
-        <p class="hero-sub">伝わるデザインで、価値をつなぎます。</p>
-        <a class="btn btn-dark" href="#works">VIEW WORKS <span>→</span></a>
+  <main>
+    <section class="mv" id="top">
+      <div class="mv__image-wrap">
+        <img class="mv__image" src="assets/images/mv.svg" alt="メインビジュアル">
       </div>
-      <div class="hero-visual" aria-label="デスクとノートパソコンのイメージ">
-        <div class="plant"></div><div class="cup"></div>
-        <div class="laptop"><div class="screen"><small>Creating<br>meaningful<br>connections.</small><i></i></div></div>
+      <div class="mv__copy-panel">
+        <p class="mv__eyebrow vertical-text">デザインで、人の心を動かす。</p>
+        <h1 class="mv__title vertical-text">想いを、<br>かたちに。</h1>
       </div>
-      <a class="scroll" href="#about"><span>↧</span>SCROLL</a>
+      <div class="mv__circle" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+          <text><textPath href="#circlePath" startOffset="0%">DESIGN CONNECTS. DESIGN FIRST. CHERYL PORTFOLIO. </textPath></text>
+        </svg>
+      </div>
+      <div class="mv__index" aria-hidden="true"><span>01</span><i></i><span>05</span></div>
+      <a class="scroll" href="#about">SCROLL<span></span></a>
     </section>
 
     <section class="section about" id="about">
-      <div class="section-inner split">
-        <div class="copy reveal">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2>はじめまして。<br>Webデザイナーの○○です。</h2>
-          <p>Webデザインを中心に、バナー制作やLP制作など、目的やターゲットに合わせたデザインを心がけています。ユーザーにとってわかりやすく、伝えたい想いがしっかり届くデザインを大切にしています。</p>
-          <a class="btn" href="#contact">MORE ABOUT ME <span>→</span></a>
+      <div class="section__head">
+        <p class="section__label vertical-text">ABOUT ME</p>
+        <div><p class="section__kicker">PROFILE</p><h2>伝わるデザインを、<br>丁寧につくる。</h2></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="lead">Webデザインを中心に、見る人にとって分かりやすく、伝えたい想いがきちんと届くデザインを大切にしています。</p>
+          <p>企業サイトや採用サイト、LP、バナーなど、目的やターゲットに合わせて情報を整理しながら、世界観と使いやすさの両立を目指しています。この文章は、ご自身のプロフィールに合わせて自由に書き換えてください。</p>
         </div>
-        <div class="arch-photo reveal" aria-hidden="true"><div class="vase"></div><div class="books"></div><div class="pencils"></div></div>
+        <figure class="about__visual"><img src="assets/images/about.svg" alt="プロフィールイメージ"></figure>
       </div>
     </section>
 
     <section class="section skills" id="skills">
-      <div class="section-inner skills-layout">
-        <div class="skills-intro reveal"><p class="eyebrow">SKILLS</p><h2>できること</h2><p>Web制作で必要なスキルを中心に、企画・デザイン・コーディングまで一貫して対応できます。</p></div>
-        <div class="skill-grid">
-          <article class="skill-card reveal"><div class="skill-icon">▣</div><h3>DESIGN</h3><ul><li>Webデザイン</li><li>バナー制作</li><li>LPデザイン</li><li>UI/UXデザイン</li></ul></article>
-          <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>CODING</h3><ul><li>HTML / CSS</li><li>Sass(SCSS)</li><li>JavaScript</li><li>レスポンシブ対応</li></ul></article>
-          <article class="skill-card reveal"><div class="skill-icon">✎</div><h3>TOOL</h3><ul><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>XD</li></ul></article>
-          <article class="skill-card reveal"><div class="skill-icon">○</div><h3>OTHER</h3><ul><li>企画・構成</li><li>ワイヤーフレーム作成</li><li>画像編集・加工</li><li>クライアント対応</li></ul></article>
-        </div>
+      <div class="section__head">
+        <p class="section__label vertical-text">SKILLS</p>
+        <div><p class="section__kicker">WHAT I CAN DO</p><h2>できること。</h2></div>
+      </div>
+      <div class="skills__grid">
+        <article class="skill-card"><span class="skill-card__no">01</span><h3>DESIGN</h3><p>Webサイト / LP / バナー / UI・UX / ワイヤーフレーム</p></article>
+        <article class="skill-card"><span class="skill-card__no">02</span><h3>TOOLS</h3><p>Figma / Photoshop / Illustrator / XD など</p></article>
+        <article class="skill-card"><span class="skill-card__no">03</span><h3>CODING</h3><p>HTML / CSS / JavaScript / レスポンシブ対応</p></article>
+        <article class="skill-card"><span class="skill-card__no">04</span><h3>OTHER</h3><p>企画 / 構成 / 情報整理 / クライアント対応</p></article>
       </div>
     </section>
 
     <section class="section works" id="works">
-      <div class="section-inner works-layout">
-        <div class="works-intro reveal"><p class="eyebrow">WORKS</p><h2>制作実績</h2><p>これまでに制作したWebサイトやバナー、LPなどの一部をご紹介します。デザインの雰囲気や得意なテイストをご覧ください。</p><a class="btn" href="#works-grid">VIEW ALL WORKS <span>→</span></a></div>
-        <div class="works-grid" id="works-grid">
-          <article class="work reveal"><div class="thumb thumb-1"><span>EC SITE</span></div><h3>オーガニック食品のECサイト</h3><p>Webサイト</p></article>
-          <article class="work reveal"><div class="thumb thumb-2"><span>INTERIOR</span></div><h3>インテリアブランドサイト</h3><p>Webサイト</p></article>
-          <article class="work reveal"><div class="thumb thumb-3"><span>SKIN CARE</span></div><h3>スキンケア商品のバナー</h3><p>バナー制作</p></article>
-          <article class="work reveal"><div class="thumb thumb-4"><span>CLINIC</span></div><h3>クリニックのサイトリニューアル</h3><p>Webサイト</p></article>
-          <article class="work reveal"><div class="thumb thumb-5"><span>SERVICE LP</span></div><h3>サービス紹介のLPデザイン</h3><p>LP制作</p></article>
-          <article class="work reveal"><div class="thumb thumb-6"><span>CAFE OPEN</span></div><h3>カフェのキャンペーンバナー</h3><p>バナー制作</p></article>
-        </div>
+      <div class="section__head">
+        <p class="section__label vertical-text">WORKS</p>
+        <div><p class="section__kicker">SELECTED PROJECTS</p><h2>制作実績。</h2></div>
+      </div>
+      <div class="works__grid">
+        <a class="work-card" href="#"><figure><img src="assets/images/work-01.svg" alt="制作実績1"></figure><div class="work-card__meta"><span>01</span><small>WEB SITE</small></div><h3>Corporate Website</h3><p>コーポレートサイト制作</p></a>
+        <a class="work-card" href="#"><figure><img src="assets/images/work-02.svg" alt="制作実績2"></figure><div class="work-card__meta"><span>02</span><small>RECRUIT</small></div><h3>Recruit Website</h3><p>採用サイト制作</p></a>
+        <a class="work-card" href="#"><figure><img src="assets/images/work-03.svg" alt="制作実績3"></figure><div class="work-card__meta"><span>03</span><small>LANDING PAGE</small></div><h3>Landing Page</h3><p>LPデザイン</p></a>
+        <a class="work-card" href="#"><figure><img src="assets/images/work-04.svg" alt="制作実績4"></figure><div class="work-card__meta"><span>04</span><small>BANNER</small></div><h3>Banner Design</h3><p>広告バナー制作</p></a>
+        <a class="work-card" href="#"><figure><img src="assets/images/work-05.svg" alt="制作実績5"></figure><div class="work-card__meta"><span>05</span><small>WEB SITE</small></div><h3>Service Website</h3><p>サービスサイト制作</p></a>
+        <a class="work-card" href="#"><figure><img src="assets/images/work-06.svg" alt="制作実績6"></figure><div class="work-card__meta"><span>06</span><small>GRAPHIC</small></div><h3>Graphic Design</h3><p>グラフィック制作</p></a>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="section-inner contact-inner reveal"><div><p class="eyebrow">CONTACT</p><h2>お仕事のご依頼・ご相談はこちら</h2><p>Web制作のご依頼やご相談は、お気軽にお問い合わせください。</p></div><a class="btn contact-btn" href="mailto:hello@example.com">CONTACT ME <span>✉</span></a><div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="SNS">●</a></div></div>
+      <div class="contact__inner">
+        <p class="contact__label">CONTACT</p>
+        <div><h2>お仕事のご依頼・<br>ご相談はこちら。</h2><p>Web制作やデザインについて、お気軽にお問い合わせください。</p></div>
+        <a class="contact__button" href="mailto:yourmail@example.com">CONTACT ME <span>↗</span></a>
+      </div>
     </section>
   </main>
 
-  <footer class="footer"><a class="logo" href="#top">PORTFOLIO.</a><nav><a href="#about">ABOUT ME</a><a href="#skills">SKILLS</a><a href="#works">WORKS</a><a href="#contact">CONTACT</a></nav><small>© 2026 Portfolio. All Rights Reserved.</small></footer>
-  <script src="./script.js"></script>
+  <footer class="footer">
+    <a href="#top" class="brand brand--footer"><span class="brand__main">CHERYL</span><span class="brand__sub">PORTFOLIO</span></a>
+    <p>© CHERYL PORTFOLIO</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
