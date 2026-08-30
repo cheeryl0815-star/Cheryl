@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <div class="loader" id="loader" aria-hidden="true">
@@ -35,7 +35,7 @@
   <main>
     <section class="mv" id="top">
       <div class="mv__image-wrap">
-        <img class="mv__image" src="assets/images/mv.svg" alt="メインビジュアル">
+        <img class="mv__image" src="assets/images/mv.jpg" alt="メインビジュアル">
       </div>
       <div class="mv__copy-panel">
         <p class="mv__eyebrow vertical-text">デザインで、人の心を動かす。</p>
@@ -66,17 +66,62 @@
     </section>
 
     <section class="section skills" id="skills">
-      <div class="section__head">
-        <p class="section__label vertical-text">SKILLS</p>
-        <div><p class="section__kicker">WHAT I CAN DO</p><h2>できること。</h2></div>
-      </div>
-      <div class="skills__grid">
-        <article class="skill-card"><span class="skill-card__no">01</span><h3>DESIGN</h3><p>Webサイト / LP / バナー / UI・UX / ワイヤーフレーム</p></article>
-        <article class="skill-card"><span class="skill-card__no">02</span><h3>TOOLS</h3><p>Figma / Photoshop / Illustrator / XD など</p></article>
-        <article class="skill-card"><span class="skill-card__no">03</span><h3>CODING</h3><p>HTML / CSS / JavaScript / レスポンシブ対応</p></article>
-        <article class="skill-card"><span class="skill-card__no">04</span><h3>OTHER</h3><p>企画 / 構成 / 情報整理 / クライアント対応</p></article>
-      </div>
-    </section>
+  <div class="section__head">
+    <p class="section__label vertical-text">SKILLS</p>
+    <div>
+      <p class="section__kicker">WHAT I CAN DO</p>
+      <h2>できること。</h2>
+    </div>
+  </div>
+
+  <div class="skills__grid">
+
+    <article class="skill-card">
+      <span class="skill-card__no">01</span>
+      <img
+        class="skill-card__icon"
+        src="assets/images/icons/skill-design.png"
+        alt=""
+      >
+      <h3>DESIGN</h3>
+      <p>Webサイト / LP / バナー / UI・UX / ワイヤーフレーム</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-card__no">02</span>
+      <img
+        class="skill-card__icon"
+        src="assets/images/icons/skill-tools.png"
+        alt=""
+      >
+      <h3>TOOLS</h3>
+      <p>Figma / Photoshop / Illustrator / XD など</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-card__no">03</span>
+      <img
+        class="skill-card__icon"
+        src="assets/images/icons/skill-coding.png"
+        alt=""
+      >
+      <h3>CODING</h3>
+      <p>HTML / CSS / JavaScript / レスポンシブ対応</p>
+    </article>
+
+    <article class="skill-card">
+      <span class="skill-card__no">04</span>
+      <img
+        class="skill-card__icon"
+        src="assets/images/icons/skill-other.png"
+        alt=""
+      >
+      <h3>OTHER</h3>
+      <p>企画 / 構成 / 情報整理 / クライアント対応</p>
+    </article>
+
+  </div>
+</section>
 
     <section class="section works" id="works">
       <div class="section__head">
@@ -84,7 +129,7 @@
         <div><p class="section__kicker">SELECTED PROJECTS</p><h2>制作実績。</h2></div>
       </div>
       <div class="works__grid">
-        <a class="work-card" href="#"><figure><img src="assets/images/work-01.svg" alt="制作実績1"></figure><div class="work-card__meta"><span>01</span><small>WEB SITE</small></div><h3>Corporate Website</h3><p>コーポレートサイト制作</p></a>
+        <a class="work-card" href="works/project-template.html"><figure><img src="assets/images/work-01.svg" alt="制作実績1"></figure><div class="work-card__meta"><span>01</span><small>WEB SITE</small></div><h3>Corporate Website</h3><p>コーポレートサイト制作</p></a>
         <a class="work-card" href="#"><figure><img src="assets/images/work-02.svg" alt="制作実績2"></figure><div class="work-card__meta"><span>02</span><small>RECRUIT</small></div><h3>Recruit Website</h3><p>採用サイト制作</p></a>
         <a class="work-card" href="#"><figure><img src="assets/images/work-03.svg" alt="制作実績3"></figure><div class="work-card__meta"><span>03</span><small>LANDING PAGE</small></div><h3>Landing Page</h3><p>LPデザイン</p></a>
         <a class="work-card" href="#"><figure><img src="assets/images/work-04.svg" alt="制作実績4"></figure><div class="work-card__meta"><span>04</span><small>BANNER</small></div><h3>Banner Design</h3><p>広告バナー制作</p></a>
