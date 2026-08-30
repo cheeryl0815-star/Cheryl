@@ -182,21 +182,33 @@ body{margin:0;color:var(--ink);
     font-weight:500;
     font-size:44px;
     line-height:1.55;
-    letter-spacing:.06em}
+    letter-spacing:.06em
+}
+
+/* ABOUT SECTION */
 .about__grid{
     display:grid;
     grid-template-columns:1fr 1.05fr;
     gap:8vw;
     align-items:center;
-    padding-left:120px}
+    padding-left:120px
+}
 .about__text{max-width:540px}
-.about__text .lead{font-family:var(--serif);font-size:22px;line-height:2;margin-bottom:28px}
+.about__text .lead{
+    font-family:var(--serif);
+    font-size:22px;
+    line-height:2;
+    margin-bottom:28px
+}
 .about__visual{
     aspect-ratio:4/3;
     overflow:hidden}
-    .about__visual img{
+.about__visual img{
         height:100%;
-        object-fit:cover}
+        object-fit:cover
+}
+
+/* SKILLS SECTION */
 .skills{
     background:linear-gradient(90deg,var(--white),#f8fafc)}
 .skills__grid{
@@ -224,19 +236,88 @@ body{margin:0;color:var(--ink);
 .skill-card:hover{
     background:var(--ice)}
 .skill-card__no{font-size:11px;opacity:.6}
-.skill-card h3{font-family:var(--serif);font-size:22px;font-weight:500;margin:48px 0 20px;letter-spacing:.12em}
+.skill-card h3{font-family:var(--serif);
+    font-size:22px;
+    font-weight:500;
+    margin:48px 0 20px;
+    letter-spacing:.12em}
 .skill-card p{font-size:13px}
-.works__grid{padding-left:120px;display:grid;grid-template-columns:repeat(3,1fr);gap:64px 28px}
-.work-card figure{aspect-ratio:4/3;overflow:hidden;background:var(--ice)}
-.work-card img{height:100%;object-fit:cover;transition:transform .55s ease}
+
+/* WORKS SECTION */
+.works__grid{
+    padding-left:120px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:64px 28px
+}
+.work-card figure{
+    aspect-ratio:4/3;
+    overflow:hidden;
+    background:var(--ice)
+}
+.work-card img{
+    height:100%;
+    object-fit:cover;
+    transition:transform .55s ease
+}
 .work-card:hover img{transform:scale(1.035)}
-.work-card__meta{display:flex;justify-content:space-between;margin-top:18px;padding-top:12px;border-top:1px solid var(--line)}
+.work-card__meta{
+    display:flex;
+    justify-content:space-between;
+    margin-top:18px;
+    padding-top:12px;
+    border-top:1px solid var(--line)
+}
 .work-card__meta span{font-family:var(--serif);font-size:18px}
 .work-card__meta small{font-size:10px;letter-spacing:.15em}
 .work-card h3{font-family:var(--serif);font-weight:500;font-size:21px;margin-top:14px}
 .work-card p{font-size:12px;opacity:.65;margin-top:4px}
-.contact{background:var(--ice);padding:120px 5vw;margin-top:30px}
-.contact__inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:140px 1fr auto;gap:42px;align-items:center}
+/* WORKS VIEW MORE */
+.works__more {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 64px;
+}
+.works__button {
+    width: 220px;
+    height: 62px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1E2532;
+    border: 1px solid #1E2532;
+    color: #FEFEFE;
+    font-size: 11px;
+    letter-spacing: .18em;
+    transition: .3s ease;
+}
+.works__button span {
+    font-size: 16px;
+    transition: transform .3s ease;
+}
+/* hover */
+.works__button:hover {
+    background: #FEFEFE;
+    color: #1E2532;
+}
+.works__button:hover span {
+    transform: translate(3px, -3px);
+}
+/* CONTACT SECTION */
+.contact{
+    background:var(--ice);
+    padding:120px 5vw;
+    margin-top:30px
+}
+.contact__inner{
+    max-width:1100px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:140px 1fr auto;
+    gap:42px;
+    align-items:center
+}
 .contact__label{writing-mode:vertical-rl;font-family:var(--serif);letter-spacing:.2em}
 .contact h2{font-family:var(--serif);font-weight:500;font-size:42px;line-height:1.55;margin-bottom:14px}
 .contact p{font-size:13px}
@@ -276,14 +357,14 @@ body{margin:0;color:var(--ink);
     width: 100%;
     height: 100%;
     opacity: 1;}
-    .mv__image {
+    /* .mv__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 32% center;}
+    object-position: 32% center;} */
 
   /* キャッチコピーを右側へ */
-    .mv__copy-panel {
+    /* .mv__copy-panel {
     left: auto;
     right: 5%;
     top: 17%;
@@ -294,7 +375,7 @@ body{margin:0;color:var(--ink);
     font-size: 36px;}
     .mv__eyebrow {
     font-size: 11px;
-    padding-top: 60px;}
+    padding-top: 60px;} */
 
 }
 .skill-card__icon {
@@ -306,4 +387,430 @@ body{margin:0;color:var(--ink);
 }
 .skills__grid .skill-card {
     background: rgba(231, 233, 238, 0.25);
+}
+/* =========================================
+   WORKS ARCHIVE PAGE
+========================================= */
+
+.works-page {
+  padding-top: 40px;
+  color: #1E2532;
+}
+
+
+/* -----------------------------------------
+   PAGE INTRO
+----------------------------------------- */
+
+.works-page__intro {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 70px 5vw 90px;
+
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 52px;
+}
+
+
+.works-page__title-label {
+  min-height: 220px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #E2E7EF;
+}
+
+
+.works-page__title-label span {
+  writing-mode: vertical-rl;
+
+  font-family: var(--serif);
+  font-size: 20px;
+  letter-spacing: .22em;
+}
+
+
+.works-page__title-content {
+  align-self: center;
+}
+
+
+.works-page__title-content h1 {
+  margin: 14px 0 0;
+
+  font-family: var(--serif);
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 400;
+  letter-spacing: .12em;
+}
+
+
+.works-page__lead {
+  margin-top: 30px;
+
+  font-family: var(--serif);
+  font-size: 13px;
+  line-height: 2.1;
+  letter-spacing: .08em;
+}
+
+
+/* -----------------------------------------
+   ARCHIVE
+----------------------------------------- */
+
+.works-archive {
+  padding: 36px 5vw 130px;
+
+  border-top: 1px solid rgba(30, 37, 50, .05);
+}
+
+
+.works-archive__grid {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  column-gap: 32px;
+  row-gap: 64px;
+}
+
+
+/* -----------------------------------------
+   CARD
+----------------------------------------- */
+
+.archive-card {
+  display: block;
+
+  min-width: 0;
+
+  color: #1E2532;
+  text-decoration: none;
+}
+
+
+.archive-card__image {
+  width: 100%;
+
+  margin: 0;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #F5F5F3;
+}
+
+
+.archive-card__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform .7s cubic-bezier(.2, .6, .2, 1),
+    opacity .4s ease;
+}
+
+
+.archive-card:hover .archive-card__image img {
+  transform: scale(1.035);
+}
+
+
+/* -----------------------------------------
+   CARD INFORMATION
+----------------------------------------- */
+
+.archive-card__info {
+  position: relative;
+
+  min-height: 67px;
+
+  display: grid;
+  grid-template-columns: 50px 1fr 20px;
+  gap: 15px;
+
+  align-items: center;
+
+  padding: 14px 0 13px;
+
+  border-bottom: 1px solid rgba(30, 37, 50, .18);
+}
+
+
+.archive-card__number {
+  padding-right: 14px;
+
+  border-right: 1px solid rgba(30, 37, 50, .18);
+
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: .04em;
+}
+
+
+.archive-card__text {
+  min-width: 0;
+}
+
+
+.archive-card__category {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-family: var(--sans);
+  font-size: 8px;
+  font-weight: 500;
+
+  letter-spacing: .18em;
+}
+
+
+.archive-card__text h2 {
+  margin: 0;
+
+  overflow: hidden;
+
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.5;
+  letter-spacing: .05em;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.archive-card__arrow {
+  justify-self: end;
+
+  font-size: 13px;
+
+  transition: transform .3s ease;
+}
+
+
+.archive-card:hover .archive-card__arrow {
+  transform: translate(3px, -3px);
+}
+
+
+/* -----------------------------------------
+   BACK
+----------------------------------------- */
+
+.works-page__back {
+  padding: 0 5vw 120px;
+
+  text-align: center;
+}
+
+
+.works-page__back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  color: #1E2532;
+
+  font-size: 10px;
+  letter-spacing: .18em;
+}
+
+
+.works-page__back span {
+  transition: transform .3s ease;
+}
+
+
+.works-page__back a:hover span {
+  transform: translateX(-4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 960px) {
+
+  .works-page__intro {
+    padding-top: 50px;
+
+    grid-template-columns: 58px 1fr;
+
+    gap: 36px;
+  }
+
+
+  .works-archive__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 24px;
+    row-gap: 58px;
+  }
+
+}
+
+
+/* =========================================
+   SMARTPHONE
+========================================= */
+
+@media (max-width: 680px) {
+
+  .works-page {
+    padding-top: 0;
+  }
+
+
+  .works-page__intro {
+    padding:
+      50px
+      5vw
+      65px;
+
+    grid-template-columns: 48px 1fr;
+
+    gap: 22px;
+  }
+
+
+  .works-page__title-label {
+    min-height: 190px;
+  }
+
+
+  .works-page__title-label span {
+    font-size: 15px;
+  }
+
+
+  .works-page__title-content h1 {
+    font-size: 32px;
+  }
+
+
+  .works-page__lead {
+    margin-top: 22px;
+
+    font-size: 11px;
+  }
+
+
+  .works-archive {
+    padding:
+      30px
+      5vw
+      90px;
+  }
+
+
+  /* SPは2カラム */
+  .works-archive__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 12px;
+    row-gap: 42px;
+  }
+
+
+  .archive-card__info {
+    min-height: 58px;
+
+    grid-template-columns: 34px 1fr 14px;
+
+    gap: 8px;
+
+    padding:
+      11px
+      0;
+  }
+
+
+  .archive-card__number {
+    padding-right: 7px;
+
+    font-size: 17px;
+  }
+
+
+  .archive-card__category {
+    margin-bottom: 3px;
+
+    font-size: 6px;
+    letter-spacing: .12em;
+  }
+
+
+  .archive-card__text h2 {
+    font-size: 10px;
+  }
+
+
+  .archive-card__arrow {
+    font-size: 10px;
+  }
+
+
+  .works-page__back {
+    padding-bottom: 80px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL SMARTPHONE
+========================================= */
+
+@media (max-width: 480px) {
+
+  /*
+    かなり小さい端末では1カラム。
+    写真・会社名の視認性を優先します。
+  */
+
+  .works-archive__grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 52px;
+  }
+
+
+  .archive-card__info {
+    grid-template-columns: 45px 1fr 18px;
+
+    gap: 12px;
+  }
+
+
+  .archive-card__number {
+    font-size: 20px;
+  }
+
+
+  .archive-card__category {
+    font-size: 7px;
+  }
+
+
+  .archive-card__text h2 {
+    font-size: 12px;
+  }
+
 }
