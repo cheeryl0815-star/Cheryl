@@ -10,3 +10,213 @@
 .points{grid-template-columns:72px 1fr}.points-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:34px 2vw}.points-grid article{padding:0 32px;border-right:1px solid var(--line)}.points-grid article:last-child{border:0}.points-grid b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--white);font-size:10px}.points-grid h3{font-family:var(--serif);font-weight:500;font-size:17px;margin:12px 0}.points-grid p{font-size:12px}
 .project-pager{margin-top:16px;border-top:1px solid var(--line);padding:34px 8vw;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.13em}
 @media(max-width:900px){.project-header nav{display:none}.project-hero{grid-template-columns:1fr}.project-hero__visual{min-height:400px}.band,.overview,.concept,.design,.points{grid-template-columns:52px 1fr}.overview__link,.palette,.typography{grid-column:2}.info-grid,.points-grid{grid-template-columns:1fr 1fr}.design-grid{grid-template-columns:1fr 1fr}.concept__copy{grid-column:2}.project-pager{gap:20px;flex-direction:column}}
+
+/* =========================================
+   PROJECT DETAIL - RESPONSIVE POLISH
+========================================= */
+@media (max-width: 680px) {
+  .project-header {
+    height: 68px;
+    padding: 0 5vw;
+  }
+
+  .brand strong {
+    font-size: 18px;
+  }
+
+  .brand span {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+
+  .project-hero {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero__copy {
+    padding: 34px 5vw 30px;
+  }
+
+  .back {
+    font-size: 9px;
+  }
+
+  .category {
+    margin-top: 42px;
+    font-size: 9px;
+  }
+
+  .project-hero h1 {
+    font-size: clamp(27px, 7vw, 32px);
+    line-height: 1.6;
+    margin-top: 12px;
+  }
+
+  .en {
+    font-size: 12px;
+  }
+
+  .counter {
+    position: static;
+    margin-top: 28px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .counter i {
+    width: 34px;
+    height: 1px;
+    margin: 0;
+  }
+
+  .project-hero__visual {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .band,
+  .overview,
+  .concept,
+  .design,
+  .points {
+    margin: 10px 3vw 0;
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .vertical-label {
+    padding: 18px 12px;
+    font-size: 13px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    padding: 10px 5vw;
+  }
+
+  .info-grid article {
+    padding: 22px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .info-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .info-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 12px;
+  }
+
+  .info-grid h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .info-grid p {
+    font-size: 11px;
+  }
+
+  .overview__text,
+  .concept__copy,
+  .palette,
+  .typography {
+    grid-column: 2;
+    padding: 30px 5vw;
+  }
+
+  .overview__text h3,
+  .concept__copy h3 {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .overview__text p,
+  .concept__copy p {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  .overview__link {
+    grid-column: 2;
+    margin: 0 4vw 28px 0;
+  }
+
+  .overview__link img {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .overview__link span {
+    right: 10px;
+    bottom: 10px;
+    padding: 8px 10px;
+    font-size: 8px;
+  }
+
+  .concept {
+    padding-right: 0;
+  }
+
+  .palette,
+  .typography {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .color-list {
+    gap: 14px;
+  }
+
+  .color-chip i {
+    width: 40px;
+    height: 40px;
+  }
+
+  .design-grid {
+    grid-column: 2;
+    padding: 28px 4vw;
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .design-grid img {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .points-grid {
+    grid-column: 2;
+    grid-template-columns: 1fr;
+    padding: 10px 5vw;
+  }
+
+  .points-grid article {
+    padding: 22px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .points-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .points-grid h3 {
+    font-size: 15px;
+  }
+
+  .points-grid p {
+    font-size: 11px;
+  }
+
+  .project-pager {
+    padding: 28px 5vw;
+    gap: 14px;
+    font-size: 9px;
+  }
+}
