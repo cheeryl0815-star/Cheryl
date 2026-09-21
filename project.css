@@ -475,7 +475,7 @@ img{height:100%;object-fit:cover}
 }
 
 .project-hero__visual img {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
   object-fit: contain;
