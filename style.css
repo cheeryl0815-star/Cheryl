@@ -883,7 +883,6 @@ section{scroll-margin-top:90px}
 
   .works-archive__grid {
     grid-template-columns: 1fr;
-
     row-gap: 52px;
   }
 
