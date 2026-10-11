@@ -1292,7 +1292,7 @@ section{scroll-margin-top:90px}
 .about-editorial {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
-  gap: clamp(40px,100px);
+  gap: clamp(40px,6vw,100px);
   align-items: start;
 }
 
@@ -1458,6 +1458,123 @@ section{scroll-margin-top:90px}
 
   .profile-section__title {
     font-size: clamp(48px, 13vw, 80px);
+  }
+}
+
+/* =====================================
+  ABOUT & PROFILE PC ALIGNMENT
+===================================== */
+
+/* 両セクションのカラム比率を統一 */
+@media (min-width: 981px) {
+
+  .about-editorial,
+  .profile-editorial {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(0, 1fr);
+    gap: clamp(40px, 6vw, 100px);
+    align-items: start;
+  }
+
+  /* ABOUT */
+  .about-editorial__content {
+    padding-top: 60px;
+  }
+
+  /* PROFILE */
+  .profile-editorial__content {
+    grid-column: 1;
+    padding-top: 60px;
+    min-width: 0;
+  }
+
+  .profile-editorial__heading {
+    grid-column: 2;
+    
+    top: 120px;
+    min-width: 0;
+  }
+
+  .profile-editorial__content .lead {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 2.2;
+    letter-spacing: .04em;
+    margin: 0;
+  }
+
+  .profile-editorial__image {
+    margin: 56px 0 0;
+  }
+}
+
+/* PROFILE TYPOGRAPHY */
+.profile-editorial__heading .profile-section__title {
+  font-family: var(--sans);
+  font-size: clamp(56px, 7.5vw, 120px);
+  font-weight: 500;
+  letter-spacing: -.085em;
+  line-height: 1;
+  white-space: nowrap;
+  margin: 32px 0;
+}
+
+.profile-editorial__sub {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .2em;
+}
+
+/* TABLET / SP */
+@media (max-width: 980px) {
+
+  .profile-editorial {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .profile-editorial__heading {
+    order: 1;
+    width: 100%;
+  }
+
+  .profile-editorial__content {
+    order: 2;
+    width: 100%;
+  }
+
+  .profile-editorial__heading .profile-section__title {
+    font-size: clamp(48px, 9vw, 90px);
+  }
+
+  .profile-editorial__content .lead {
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.95;
+  }
+
+  .profile-editorial__image {
+    margin: 36px 0 0;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .profile-editorial {
+    gap: 36px;
+  }
+
+  .profile-editorial__heading .profile-section__title {
+    font-size: clamp(48px, 13vw, 80px);
+    margin: 22px 0;
+  }
+
+  .profile-editorial__content .lead {
+    font-size: 14px;
+    line-height: 2;
   }
 }
 
