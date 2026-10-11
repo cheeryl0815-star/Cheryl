@@ -1280,4 +1280,185 @@ section{scroll-margin-top:90px}
   }
 
 }
+
+/* =====================================
+   ABOUT EDITORIAL
+===================================== */
+
+.about--editorial {
+  overflow: hidden;
+}
+
+.about-editorial {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: clamp(40px,100px);
+  align-items: start;
+}
+
+/* LEFT */
+.about-editorial__heading {
+  position: sticky;
+  top: 120px;
+}
+
+.about-editorial__label,
+.about-editorial__sub {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .2em;
+}
+
+.about--editorial .about-editorial__title {
+  font-family: var(--sans);
+  font-size: clamp(76px, 10vw, 160px);
+  font-weight: 500;
+  letter-spacing: -.085em;
+  line-height: .88;
+  margin: 32px 0;
+}
+
+.about-editorial__dot {
+  color: #8C9BB0;
+}
+
+/* RIGHT */
+.about-editorial__content {
+  padding-top: 60px;
+  min-width: 0;
+}
+
+.about-editorial__content h3 {
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.about-editorial__description {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 2.2;
+  letter-spacing: .04em;
+  max-width: 540px;
+}
+
+.about-editorial__image {
+  margin-top: 56px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.about-editorial__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TABLET */
+@media (max-width: 980px) {
+  .about-editorial {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-editorial__heading {
+    position: static;
+  }
+
+  .about-editorial__content {
+    padding-top: 0;
+  }
+
+  .about--editorial .about-editorial__title {
+    font-size: clamp(72px, 13vw, 120px);
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 680px) {
+  .about-editorial {
+    gap: 36px;
+  }
+
+  .about--editorial .about-editorial__title {
+    font-size: clamp(64px, 17vw, 100px);
+    margin: 22px 0;
+  }
+
+  .about-editorial__content h3 {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  .about-editorial__description {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .about-editorial__image {
+    margin-top: 36px;
+  }
+}
+
+/* =====================================
+  PROFILE EDITORIAL
+===================================== */
+
+.profile-section__right {
+  min-width: 0;
+}
+
+.profile-section__heading {
+  margin-bottom: 32px;
+}
+
+.profile-section__label {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .2em;
+  margin-bottom: 24px;
+}
+
+.profile-section__title {
+  font-family: var(--sans);
+  font-size: clamp(56px, 7.5vw, 120px);
+  font-weight: 500;
+  letter-spacing: -.085em;
+  line-height: 1;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.profile-section__title span {
+  color: #8C9BB0;
+}
+
+.profile-section__right .about__visual {
+  margin: 0;
+}
+
+/* TABLET */
+@media (max-width: 980px) {
+  .profile-section__title {
+    font-size: clamp(48px, 9vw, 90px);
+  }
+}
+
+/* SMARTPHONE */
+@media (max-width: 680px) {
+  .profile-section__heading {
+    margin-bottom: 24px;
+  }
+
+  .profile-section__label {
+    margin-bottom: 16px;
+  }
+
+  .profile-section__title {
+    font-size: clamp(48px, 13vw, 80px);
+  }
+}
+
 /* 最終はここ */
